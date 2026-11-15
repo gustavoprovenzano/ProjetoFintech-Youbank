@@ -25,8 +25,6 @@ ul {
     list-style: none;
 }
 
-/* --- LOGO  --- */
-
 header {
     width: 100%;
     max-width: 1200px;
@@ -56,8 +54,6 @@ header .logo span {
     border-radius: 4px;
     font-size: 1.1rem;
 }
-
-/* --- MENU DE NAVEGAÇÃO --- */
 
 header nav.menu-nav ul,
 header nav ul {
@@ -89,7 +85,6 @@ header nav ul li a:hover {
     border-bottom: 2px solid #e64a19;
 }
 
-/* Estilo do usuário logado */
 #bemVindo {
     background-color: #f4f6f9;
     padding: 6px 12px;
@@ -99,11 +94,6 @@ header nav ul li a:hover {
     border-bottom: none !important;
 }
 
-#bemVindo:hover {
-    border-bottom: none !important;
-}
-
-/* --- CONTAINER PRINCIPAL (Home e Páginas Internas) --- */
 .container {
     width: 100%;
     max-width: 1200px;
@@ -119,33 +109,6 @@ header nav ul li a:hover {
     font-weight: 600;
 }
 
-#containerHome {
-    flex: 1;
-    width: 100%;
-    max-width: 800px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    color: #1d1d1d;
-    padding: 40px 20px;
-}
-
-#containerHome h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-    font-weight: 600;
-    line-height: 1.2;
-}
-
-#containerHome p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    color: #0e0e0e;
-    margin-bottom: 20px;
-}
-
-/* --- GRID PADRÃO PARA TODAS AS PÁGINAS --- */
 .grid-padrao {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -153,39 +116,110 @@ header nav ul li a:hover {
     width: 100%;
 }
 
-/* --- ESTILO DOS CARDS --- */
-.vantagem {
+.card {
     background: #ffffff;
     padding: 2rem;
     border-radius: 16px;
-    /* Cantos bem arredondados, sem aspecto quadrado */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     border: 1px solid #e5e7eb;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: left;
     overflow: hidden;
-    /* Garante que nada escape das bordas arredondadas */
 }
 
-.vantagem:hover {
+.card:hover {
     transform: translateY(-5px);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
     border-color: #e64a19;
 }
 
-.vantagem h2 {
+.card h2 {
     font-size: 1.25rem;
     color: #e64a19;
     margin-bottom: 0.75rem;
 }
 
-.vantagem p {
+.card p {
     color: #6b7280;
     font-size: 0.95rem;
     line-height: 1.5;
 }
 
-/* --- FOOTER --- */
+.card button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #e64a19;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.escondido {
+    display: none;
+}
+
+#janela-formulario {
+    margin-top: 40px;
+    padding: 30px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#formularioCliente h2 {
+    margin-bottom: 20px;
+    color: #333;
+    border-bottom: 2px solid #f4f4f4;
+    padding-bottom: 10px;
+}
+
+#formularioCliente label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #555;
+}
+
+#formularioCliente input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.botoes-form {
+    margin-top: 25px;
+    display: flex;
+    gap: 15px;
+}
+
+.botoes-form button {
+    padding: 12px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+}
+
+#btnSalvar {
+    background-color: #0056b3;
+    color: white;
+}
+
+#btnVoltar {
+    background-color: #6c757d;
+    color: white;
+}
+
 footer {
     width: 100%;
     font-size: 0.8rem;
@@ -194,7 +228,6 @@ footer {
     padding-top: 20px;
 }
 
-/* --- RESPONSIVIDADE PARA TELAS MENORES --- */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -207,9 +240,5 @@ footer {
         justify-content: center;
         gap: 15px;
         flex-wrap: wrap;
-    }
-
-    #containerHome h1 {
-        font-size: 2.2rem;
     }
 }

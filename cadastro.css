@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #e64a19;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    padding: 40px;
+}
+
+.conteudo-central {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.boas-vindas {
+    max-width: 450px;
+    min-width: 280px;
+    text-align: center;
+}
+
+.boas-vindas h1 {
+    font-size: 3.5rem;
+    color: #ffffff;
+    line-height: 1.1;
+    font-weight: 600;
+}
+
+.boas-vindas p {
+    font-size: 1.3rem;
+    color: #ffccbc;
+    margin-top: 12px;
+}
+
+.containerLogin {
+    width: 360px;
+    height: 400px;
+    background-color: #ffffff;
+    padding: 40px 30px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.containerLogin input[type="text"],
+.containerLogin input[type="password"] {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    border: 1px solid #cfd8dc;
+    background-color: #fafafa;
+    font-size: 0.95rem;
+    color: #333;
+    outline: none;
+    border-radius: 4px;
+}
+
+.containerLogin input[type="text"]:focus,
+.containerLogin input[type="password"]:focus {
+    border-color: #e64a19;
+}
+
+#btnEntrar,
+#btnVoltar {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    font-size: 0.95rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+#btnEntrar {
+    background-color: #19b5e6;
+    color: #ffffff;
+}
+
+#btnEntrar:hover {
+    background-color: #e64a19;
+}
+
+#btnVoltar {
+    background-color: #ffffff;
+    color: #19b5e6;
+    border: 1px solid #e64a19;
+}
+
+#btnVoltar:hover {
+    background-color: #e64a19;
+}
+
+footer {
+    width: 100%;
+    font-size: 0.8rem;
+    color: #ffccbc;
+    text-align: center;
+    padding-top: 20px;
+}

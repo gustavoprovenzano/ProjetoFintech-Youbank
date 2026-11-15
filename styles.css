@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #dadada;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+/* --- LOGO  --- */
+
+header {
+    width: 100%;
+    max-width: 1200px;
+    background-color: #ffffff;
+    padding: 15px 30px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+header .logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+header .logo span {
+    background-color: #e64a19;
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 1.1rem;
+}
+
+/* --- MENU DE NAVEGAÇÃO --- */
+
+header nav.menu-nav ul,
+header nav ul {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    list-style: none !important;
+    gap: 20px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+header nav ul li {
+    display: inline-block !important;
+}
+
+header nav ul li a {
+    font-size: 1rem;
+    color: #555;
+    font-weight: 500;
+    text-decoration: none;
+    padding-bottom: 4px;
+    transition: color 0.2s, border-bottom 0.2s;
+    white-space: nowrap;
+}
+
+header nav ul li a:hover {
+    color: #e64a19;
+    border-bottom: 2px solid #e64a19;
+}
+
+/* Estilo do usuário logado */
+#bemVindo {
+    background-color: #f4f6f9;
+    padding: 6px 12px;
+    border-radius: 6px;
+    color: #333 !important;
+    font-weight: 600;
+    border-bottom: none !important;
+}
+
+#bemVindo:hover {
+    border-bottom: none !important;
+}
+
+/* --- CONTAINER PRINCIPAL (Home e Páginas Internas) --- */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    flex: 1;
+    margin-bottom: 30px;
+}
+
+.container h1 {
+    font-size: 2.2rem;
+    color: #252525;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+
+#containerHome {
+    flex: 1;
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #1d1d1d;
+    padding: 40px 20px;
+}
+
+#containerHome h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+#containerHome p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #0e0e0e;
+    margin-bottom: 20px;
+}
+
+/* --- GRID PADRÃO PARA TODAS AS PÁGINAS --- */
+.grid-padrao {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    width: 100%;
+}
+
+/* --- ESTILO DOS CARDS --- */
+.vantagem {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 16px;
+    /* Cantos bem arredondados, sem aspecto quadrado */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e5e7eb;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+    overflow: hidden;
+    /* Garante que nada escape das bordas arredondadas */
+}
+
+.vantagem:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    border-color: #e64a19;
+}
+
+.vantagem h2 {
+    font-size: 1.25rem;
+    color: #e64a19;
+    margin-bottom: 0.75rem;
+}
+
+.vantagem p {
+    color: #6b7280;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* --- FOOTER --- */
+footer {
+    width: 100%;
+    font-size: 0.8rem;
+    color: #ffccbc;
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* --- RESPONSIVIDADE PARA TELAS MENORES --- */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        padding: 15px;
+    }
+
+    header nav ul {
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    #containerHome h1 {
+        font-size: 2.2rem;
+    }
+}

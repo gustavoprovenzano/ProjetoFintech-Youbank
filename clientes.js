@@ -43,3 +43,10 @@ if (btnVoltar) {
         window.location.href = 'clientes.html';
     });
 }
+
+
+if(btnConsultarClientes) {
+    btnConsultarClientes.addEventListener('click', function () {
+        window.location.href = 'clientes.html';
+    });
+}

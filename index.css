@@ -93,29 +93,22 @@ body {
     transition: background 0.2s;
 }
 
-#btnEntrar {
+#btnEntrar,
+#btnCriarConta {
     background-color: #19b5e6;
     color: #ffffff;
 }
 
-#btnEntrar:hover {
-    background-color: #e64a19;
-}
-
-#btnCriarConta {
-    background-color: #ffffff;
-    color: #19b5e6;
-    border: 1px solid #e64a19;
-}
-
+#btnEntrar:hover,
 #btnCriarConta:hover {
     background-color: #e64a19;
 }
 
+
 footer {
     width: 100%;
     font-size: 0.8rem;
-    color: #ffccbc;
+    color: #4d4d4d;
     text-align: center;
     padding-top: 20px;
 }
